@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include payroll_interface *.css
+recursive-include payroll_interface *.csv
+recursive-include payroll_interface *.html
+recursive-include payroll_interface *.ico
+recursive-include payroll_interface *.js
+recursive-include payroll_interface *.json
+recursive-include payroll_interface *.md
+recursive-include payroll_interface *.png
+recursive-include payroll_interface *.py
+recursive-include payroll_interface *.svg
+recursive-include payroll_interface *.txt
+recursive-exclude payroll_interface *.pyc
