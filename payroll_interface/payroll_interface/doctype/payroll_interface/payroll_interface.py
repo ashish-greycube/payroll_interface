@@ -883,6 +883,8 @@ def get_opening_accounts(company):
 	return [{"account": a, "balance": get_balance_on(a)} for a in accounts]
 
 
+@frappe.whitelist()
+@frappe.validate_and_sanitize_search_inputs
 def get_against_jv(doctype, txt, searchfield, start, page_len, filters):
 	return frappe.db.sql("""select jv.name, jv.posting_date, jv.user_remark
 		from `tabPayroll Interface` jv, `tabPayroll Interface Account` jv_detail
